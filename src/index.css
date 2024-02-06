@@ -52,13 +52,13 @@
 }
 
 .card{
-    width: 17vw;
+    width: 42vh;
     background-color:rgb(11, 5, 48);
     margin: 0.5vw;
     gap: 1vw;
 }
 .card img{
-    width: 17vw;
+    width: 42vh;
 }
 .cardCont{
     color: white;
@@ -78,14 +78,14 @@
     cursor: pointer;
     padding: 0.25vw;
     margin:0.8vw;
-    position: absolute;
-    right: 0;
-    bottom: 0;
     border: none;
     width: 30px;
     height: 30px;
     border-radius: 20px;
     font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .not{

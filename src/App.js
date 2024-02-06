@@ -7,7 +7,6 @@ import { useState,useEffect } from "react";
 import { toast } from "react-toastify";
 
 function App() {
-
   const[info,setInfo]=useState(null);
   const[loading,setLoading]=useState(true);
   const[category,setCategory]=useState(filterData[0].title)
@@ -17,8 +16,6 @@ function App() {
     let ta=t;
     setCategory(ta)
   }
-
-
   // ***********
   async function fetchData(){
     setLoading(true);
