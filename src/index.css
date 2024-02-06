@@ -1,13 +1,144 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+ background-color:rgb(85, 80, 113);
+ height: 100vh;
+ width: 100vw;
+ overflow-y: auto;
+ overflow-x:hidden ;
 }
+
+.nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(37, 11, 59);
+    color: white;
+    font-size: 35px;
+    padding: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+    width: 100vw;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+    margin: 2vw;
+}
+.filter button{
+    padding: 0.5vw;
+    cursor: pointer;
+    background-color:  rgb(37, 11, 59);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+}
+
+.card{
+    width: 17vw;
+    background-color:rgb(11, 5, 48);
+    margin: 0.5vw;
+    gap: 1vw;
+}
+.card img{
+    width: 17vw;
+}
+.cardCont{
+    color: white;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+#title{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.image{
+    position: relative;
+}
+.image button{
+    cursor: pointer;
+    padding: 0.25vw;
+    margin:0.8vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+.not{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: conic-gradient(#0000 10%,#000000);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+    animation: spinner-zp9dbg 1s infinite linear;
+ }
+ 
+@keyframes spinner-zp9dbg {
+    to {
+       transform: rotate(1turn);
+    }
+ }
+
+ @media (max-width: 600px){
+    .cards{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+       gap: 2vw;
+    }
+    .card{
+        width: 190px;
+        height: 250px;
+        background-color:rgb(11, 5, 48);
+        margin: 0.5vw;
+        gap: 1vw;
+    }
+    .card img{
+        width: 190px;
+    }
+    #title{
+        font-size: large;
+    }
+    .filter{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filter button{
+        font-size: large;
+        padding: 1vw;
+    }
+ }
